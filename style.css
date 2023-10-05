@@ -6,12 +6,12 @@
 
 section{
     height: 100vh;
-    background-color: rgb(39, 43, 68);
+    background-color: rgb(39, 61, 208);
     font-family: sans-serif;
 }
 
 .score{
-    color: rgb(187, 186, 186);
+    color: rgb(110, 235, 173);
     height: 20vh;
     display: flex;
     justify-content: space-around;
@@ -42,15 +42,26 @@ section{
     font-size: 50px;
 }
 
-.intro button
-.match button{
+.intro button{
     width: 150px;
     height: 50px;
     background: none;
     border: none;
-    color: rgb(187, 186, 186);
+    color: rgb(255, 252, 252);
     font-size: 20px;
-    background: rgb(45, 117, 96);
+    background: rgb(52, 158, 159);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.options button{
+    width: 150px;
+    height: 50px;
+    background: none;
+    border: none;
+    color: rgb(247, 243, 243);
+    font-size: 20px;
+    background: rgb(4, 143, 101);
     border-radius: 5px;
     cursor: pointer;
 }
