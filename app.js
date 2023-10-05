@@ -54,19 +54,22 @@ const game = () => {
     //   });
     // };
   
-    // const updateScore = () => {
-    //   const playerScore = document.querySelector(".player-score p");
-    //   const computerScore = document.querySelector(".computer-score p");
-    //   playerScore.textContent = pScore;
-    //   computerScore.textContent = cScore;
-    // }
+    const updateScore = () => { //updates the score
+
+      const playerScore = document.querySelector(".player-score p"); //selects the player score
+
+      const computerScore = document.querySelector(".computer-score p"); //selects the computer score
+
+      playerScore.textContent = pScore; //updates the player score
+      computerScore.textContent = cScore;//updates the computer score
+    }
   
     const compareHands = (playerChoice, computerChoice) => {
-      //Update Text
+      //Updating Text
       const winner = document.querySelector(".winner");
       //Checking for a tie
       if (playerChoice === computerChoice) {
-        winner.textContent = "It is a tie";
+        winner.textContent = "It's a tie";
         return;
       }
 
