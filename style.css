@@ -79,12 +79,60 @@ section{
     transform: rotateY(180deg);
 }
 
-div.fadeout{
+div.fadeOut{
     opacity: 0;
     pointer-events: none;
 }
 
-div.fadein{
+div.fadeIn{
     opacity: 1;
     pointer-events: all;
+}
+
+@keyframes shakePlayer{
+    0% {
+        transform: rotateY(180deg) translateY(0px);
+    }
+    15% {
+        transform: rotateY(180deg) translateY(-10px);
+    }
+    30% {
+        transform: rotateY(180deg) translateY(0px);
+    }
+    45% {
+        transform: rotateY(180deg) translateY(-10px);
+    }
+    60% {
+        transform: rotateY(180deg) translateY(0px);
+    }
+    75% {
+        transform: rotateY(180deg) translateY(-10px);
+    }
+    100% {
+        transform: rotateY(180deg) translateY(0px);
+    }
+}
+
+@keyframes shakeComputer {
+    0% {
+        transform: translateY(0px);
+    }
+    15% {
+        transform: translateY(-10px);
+    }
+    30% {
+        transform: translateY(0px);
+    }
+    45% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(0px);
+    }
+    75% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
