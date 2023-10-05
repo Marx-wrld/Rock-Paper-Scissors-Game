@@ -78,3 +78,12 @@ section{
     transform: rotateY(180deg);
 }
 
+div.fadeout{
+    opacity: 0;
+    pointer-events: none;
+}
+
+div.fadein{
+    opacity: 1;
+    pointer-events: all;
+}
