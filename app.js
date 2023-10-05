@@ -37,9 +37,9 @@ const game = () => {
       options.forEach(option => {
         option.addEventListener ("click", function() {
 
-          // // Reset images
-          // playerHand.src = `./assets/rock.png`;
-          // computerHand.src = `./assets/rock.png`;
+          // Reset images
+          playerHand.src = `./assets/rock.png`;
+          computerHand.src = `./assets/rock.png`;
           
           //Computer Choice
           const computerNumber = Math.floor(Math.random() * 3); //random number between 0 and 2
