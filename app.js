@@ -31,17 +31,22 @@ const game = () => {
   
       options.forEach(option => {
         option.addEventListener ("click", function() {
+          
           //Computer Choice
           const computerNumber = Math.floor(Math.random() * 3); //random number between 0 and 2
           const computerChoice = computerOptions[computerNumber]; //randomly chooses rock, paper, or scissors
   
-    //       setTimeout(() => {
-    //         //Calling compare hands
-    //         compareHands(this.textContent, computerChoice);
-    //         //Updating the Images
-    //         playerHand.src = `./assets/${this.textContent}.png`;
-    //         computerHand.src = `./assets/${computerChoice}.png`;
-    //       }, 2000);
+          setTimeout(() => {
+
+            //Calling compare hands
+            compareHands(this.textContent, computerChoice);
+            
+            //Updating the Images
+            playerHand.src = `./assets/${this.textContent}.png`; //this.textContent is the text content of the button that was clicked
+
+            computerHand.src = `./assets/${computerChoice}.png`; //computerChoice is the random choice of the computer
+          }, 2000);
+
     //       //Animation
     //       playerHand.style.animation = "shakePlayer 2s ease";
     //       computerHand.style.animation = "shakeComputer 2s ease";
